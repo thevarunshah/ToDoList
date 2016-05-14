@@ -22,6 +22,9 @@ public class ToDoListView extends Activity implements View.OnClickListener {
     private ListView listView = null; //main view of to-do list
     ArrayAdapter<String> listAdapter = null; //how to manage the list
 
+    /*
+    This method is where the activity layout is set up
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -74,6 +77,9 @@ public class ToDoListView extends Activity implements View.OnClickListener {
         addItem.setOnClickListener(this);
     }
 
+    /*
+    This on-click method listens for taps to what it is attached to
+     */
     @Override
     public void onClick(View v) {
 
@@ -82,6 +88,9 @@ public class ToDoListView extends Activity implements View.OnClickListener {
         startActivityForResult(i, 0);
     }
 
+    /*
+    This method waits for the user to finish another activity and processes the results
+     */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -95,6 +104,9 @@ public class ToDoListView extends Activity implements View.OnClickListener {
         }
     }
 
+    /*
+    This method is where you save any persistent data - the user might be exiting the app
+     */
     @Override
     protected void onPause(){
 
@@ -109,6 +121,9 @@ public class ToDoListView extends Activity implements View.OnClickListener {
         }
     }
 
+    /*
+    This method is where you load any persistent data - the user might be entering the app
+     */
     @Override
     protected void onResume(){
 

@@ -9,6 +9,9 @@ import android.widget.EditText;
 
 public class AddItemView extends Activity implements View.OnClickListener{
 
+    /*
+    This method is where the activity layout is set up
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -20,6 +23,9 @@ public class AddItemView extends Activity implements View.OnClickListener{
         addItem.setOnClickListener(this);
     }
 
+    /*
+    This on-click method listens for taps to what it is attached to
+     */
     @Override
     public void onClick(View v) {
 
