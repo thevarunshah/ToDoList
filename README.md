@@ -5,6 +5,8 @@ A demo Android app for those getting started with Android development!
 All of the relevant project files are located under <b>app/src/main</b>
 
 # Important folders and files
+The <b>build.gradle</b> file under <b>app</b> defines the Android versions the app is compatible with along with the various dependencies that are requried for the project.
+
 The <b>AndroidManifest.xml</b> file is where you would list all of the different activities (screens) for your app. You can also specify various permissions and general app attributes within this file.
 
 The <b>java/com/thevarunshah/todolist</b> folder contains your Java classes. This is where you design the backend of your project. All of your Activity classes also go here (they are the ones which end with '...View') - these classes are where you would manipulate your various screens. 
